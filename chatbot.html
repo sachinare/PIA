@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGS Intelligence Agent</title>
+    <style>
+        /* Basic page setup */
+        body {
+            font-family: "Segoe UI", Arial, sans-serif; /* Standard Microsoft font */
+            margin: 0;
+            padding: 0;
+            background-color: #0f7a85; /* A solid fallback color */
+            /* This gradient closely mimics the screenshot's background */
+            background-image: linear-gradient(135deg, #0d5c63, #1e838e);
+            color: white;
+            overflow: hidden; /* Prevents scrollbars */
+        }
+
+        /* Main container to create the two-column layout */
+        .container {
+            display: flex;
+            height: 100vh; /* Full viewport height */
+            width: 100vw;  /* Full viewport width */
+            align-items: center; /* Vertically center content */
+            padding: 2rem 4rem; /* Add some padding on the sides */
+            box-sizing: border-box;
+        }
+
+        /* Left side content area */
+        .left-panel {
+            flex: 1; /* Take up half the space */
+            padding-right: 2rem;
+        }
+
+        /* Right side chat window area */
+        .right-panel {
+            flex: 1; /* Take up the other half */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Styling the text */
+        .left-panel h1 {
+            font-size: 2.8rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .left-panel p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        
+        /* Note on sparkle graphics */
+        /* The star/sparkle graphics in the screenshot are background images. 
+           For a perfect match, you would need to add them using the CSS 'background-image' property.
+           This code provides the color and layout foundation. */
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-panel">
+            <h1>PGS Intelligence Agent</h1>
+            <p>Your Site Visit Guide</p>
+        </div>
+
+        <div class="right-panel">
+            <iframe 
+                src="https://copilotstudio.preview.microsoft.com/environments/Default-7d99fde0-9aa9-40bf-90eb-500bcc4c1131/bots/cr5a3_oeeAgent/webchat?__version__=2" 
+                frameborder="0" 
+                style="width: 1000px; height: 700px; background-color: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+            </iframe>
+        </div>
+    </div>
+
+</body>
+</html>
